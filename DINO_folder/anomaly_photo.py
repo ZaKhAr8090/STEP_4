@@ -14,3 +14,4 @@ def anomaly_photo_func(glob, top_farthest_points_idx):
         plt.imshow(img)
         plt.axis('off') 
         plt.show()
+        
