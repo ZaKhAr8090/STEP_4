@@ -73,23 +73,19 @@
 НИР_4/
 ├── DINO_folder/
 │   ├── dino.py                      # DINO-эмбеддинги
-│   ├── PCA_kmeans.py                # PCA + k‑means кластеризация
-│   ├── anomaly_photo.py             # детектор аномалий по DINO
-│   └── tests_dino.ipynb             # тестовый ноутбук для DINO
-├── GIT_folder/
-│   ├── GIT_vectors.py               # работа с векторами GIT
 │   ├── PCA_kmeans.py                # PCA + k‑means
-│   ├── anomaly_photo.py             # детектор аномалий по GIT
-│   └── tests_git.ipynb              # тестовый ноутбук для GIT
+│   ├── anomaly_photo.py             # Визуализация
+│   └── tests_dino.ipynb             # Тестирование методов на векторах DINO
+├── GIT_folder/
+│   ├── GIT_vectors.py               # GIT-эмбеддинги
+│   ├── PCA_kmeans.py                # PCA + k‑means
+│   ├── anomaly_photo.py             # Визуализация
+│   └── tests_git.ipynb              # Тестирование методов на векторах GIT
 ├── poisoned_folder/
-│   ├── poisoned.py                  # логика с отравленными данными
-│   └── tests_poisoned.ipynb         # тесты для poisoned
+│   ├── poisoned.py                  # Генерация отравленных данных
+│   └── tests_poisoned.ipynb         # Тестирвоание методов обнаружения отравленных данных
 ├── Segmentation/
-│   ├── from_det_to_seg.py           # переход от детекции к сегментации
-│   └── tests.ipynb                  # ноутбук для сегментации
-├── configs/                         # YAML‑конфиги (если будут)
-│   └── *.yaml
-├── requirements.txt                 # зависимости
-├── README.md
+│   ├── from_det_to_seg.py           # Код для преобразования разметки детекции в разметку для сегментации
+│   └── tests.ipynb                  # Сравнение связки Yolo-det + SAM3 и Yolo-seg
 └── .git/                            # служебная папка Git
 ```
