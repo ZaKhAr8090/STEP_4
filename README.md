@@ -60,3 +60,36 @@
 - Предложенный комбинированный метод стабильно показывает лучшие результаты (находит больше аномалий и раньше в ранжированном списке).
 - Для малых выборок (Color‑Cap) CLIP (размерность 512) может быть менее устойчив, чем DINOv2 (768).
 - OneClassSVM эффективен только после снижения размерности (PCA).
+
+
+
+
+
+
+
+## Структура репозитория
+
+```
+НИР_4/
+├── DINO_folder/
+│   ├── dino.py                      # DINO-эмбеддинги
+│   ├── PCA_kmeans.py                # PCA + k‑means кластеризация
+│   ├── anomaly_photo.py             # детектор аномалий по DINO
+│   └── tests_dino.ipynb             # тестовый ноутбук для DINO
+├── GIT_folder/
+│   ├── GIT_vectors.py               # работа с векторами GIT
+│   ├── PCA_kmeans.py                # PCA + k‑means
+│   ├── anomaly_photo.py             # детектор аномалий по GIT
+│   └── tests_git.ipynb              # тестовый ноутбук для GIT
+├── poisoned_folder/
+│   ├── poisoned.py                  # логика с отравленными данными
+│   └── tests_poisoned.ipynb         # тесты для poisoned
+├── Segmentation/
+│   ├── from_det_to_seg.py           # переход от детекции к сегментации
+│   └── tests.ipynb                  # ноутбук для сегментации
+├── configs/                         # YAML‑конфиги (если будут)
+│   └── *.yaml
+├── requirements.txt                 # зависимости
+├── README.md
+└── .git/                            # служебная папка Git
+```
